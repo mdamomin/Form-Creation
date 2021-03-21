@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Important information</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="first_name" id="firstName" placeholder="enter your first name">
+            <br>
+            <br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="last_name" id="lastName" placeholder="enter your last name">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="enter your email ID">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Type your password">
+            <br>
+            <br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" checked>Male &nbsp <input type="radio" name="gender">Female
+            <br>
+            <br>
+            <input type="checkbox" name="fruits" id="orange">Orange <br>
+            <input type="checkbox" name="fruits" id="banana" checked>Banana <br>
+            <input type="checkbox" name="fruits" id="mango">Mango <br>
+            <input type="checkbox" name="fruits" id="apple">Apple <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Optional information</legend>
+            <p>Where are you from?</p>
+            <select>
+                <optgroup label="South Asia">
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="india">India</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="nepal" selected>Nepal</option>
+                </optgroup>
+                <optgroup label="North America">
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="mexico">Mexico</option>
+                </optgroup>                
+            </select>
+            <p>Write about yourself:</p>
+            <textarea cols="100" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit"> &nbsp;
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
